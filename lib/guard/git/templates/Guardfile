@@ -1,0 +1,3 @@
+guard 'git' do
+  watch(".")
+end
