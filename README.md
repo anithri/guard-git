@@ -6,6 +6,8 @@ The guard-grit gem is for intereacting with your git repo automatically.  It use
 ## UNDER DEVELOPMENT
 Work is still proceeding on guard-grit and it is not ready to be used anywhere much less production.
 
+I am using this as an experiment for ways to do self-adding modules, so that is why the module includes are so complicated.  If this takes off I'll prolly refactor those to be a bit simpler.
+
 ## Intended Usage
 
 Guard Grit will support the following functionality.  Each can be turned on or off individually.
@@ -70,7 +72,6 @@ end
 :auto_branch_prefix => :auto      # string, symbol or array of string/symbol used to construct a auto branch name from the current branch name.  These parts appear before the current branch name.
 :auto_branch_suffix => nil        # As prefix, but appears after current branch name.
 :auto_branch_separator => "/"     # insert this as a separator between Prefix, current branch name, and suffix parts.
-:auto_branch_to_existing => false # Allows the autbranch to be used even if it already exists.
 :auto_branch_merge_back => true   # Merge auto branch back to original branch on Guard Stop.
 
 #The rest of these are subject to change
