@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 # Specify your gem's dependencies in guard-git.gemspec
 gemspec
 
-gem "grit", "~> 2.4.1"
+gem "grit", git: "https://github.com/mojombo/grit.git"
 gem "guard", "~> 1.0.1"
 gem "term-ansicolor"
 group :development, :test do
